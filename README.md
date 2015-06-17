@@ -1,11 +1,11 @@
 # Rodizio-Organistas-CCB
 Sistema para Facilitar a Geração do Rodizio de Organistas da CCB
-##Possui:
+######Possui:
 <ul>
 <li>Cadastro de Igreja, com os dias de Culto.</li>
 <li>Cadastro de Organistas, com os dias que elas estão disponíveis para tocar.</li>
 </ul>
-##Execução:
+######Execução:
 <ul>
 <li>Gera o Rodízio informando o período do Rodizio.</li>
 <li>Escolhe-se o dia e as organistas que tocarão neste dia.</li>
