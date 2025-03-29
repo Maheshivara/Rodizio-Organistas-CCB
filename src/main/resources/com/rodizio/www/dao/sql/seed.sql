@@ -3800,7 +3800,7 @@ INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3764, '
 INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3765, 'Messias Targino', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3765); 
 INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3766, 'Montanhas', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3766); 
 INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3767, 'Monte Alegre', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3767); 
-INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3768, 'Momaven resources folderraï¿½', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3776); 
+INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3768, 'Monte das Gameleiras', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3768); 
 INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3777, 'Parazinho', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3777); 
 INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3778, 'Parelhas', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3778); 
 INSERT INTO endereco_cidade (id_cidade, nome_cidade, cod_estado) SELECT  3779, 'Parnamirim', 20   WHERE NOT EXISTS (SELECT 1 FROM endereco_cidade WHERE id_cidade=3779); 

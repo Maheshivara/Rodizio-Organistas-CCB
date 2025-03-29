@@ -1,9 +1,8 @@
 package com.rodizio.www.dao;
 
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
-
 import javax.swing.*;
+
+import com.rodizio.www.util.ferramentas.ReadSqlFile;
 
 public abstract class InsertsIniciaisBD {
 
@@ -37,23 +36,7 @@ public abstract class InsertsIniciaisBD {
 
 	private static String[] getListaInserts() {
 
-		InputStream inputStream = InsertsIniciaisBD.class.getResourceAsStream("/com/rodizio/www/dao/sql/seed.sql");
-		if (inputStream == null) {
-			throw new RuntimeException("File not found: /com/rodizio/www/dao/sql/seed.sql");
-		}
-		byte[] bytes = new byte[0];
-		try {
-			bytes = inputStream.readAllBytes();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		String original = new String(bytes, StandardCharsets.UTF_8);
-		String withoutComments = original.replaceAll("(?m)^--.*$", "");
-
-		String[] listaDeInserts = withoutComments.replace("\r\n", "\n").split(";");
-		for (int i = 0; i < listaDeInserts.length; i++) {
-			listaDeInserts[i] = listaDeInserts[i].replace("\n", " ").trim();
-		}
+		String[] listaDeInserts = ReadSqlFile.readSqlFile("/com/rodizio/www/dao/sql/seed.sql");
 
 		return listaDeInserts;
 
