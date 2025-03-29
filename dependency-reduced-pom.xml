@@ -4,7 +4,7 @@
   <groupId>com.rodizio.www</groupId>
   <artifactId>rodizio</artifactId>
   <name>Rodizio</name>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1</version>
   <description>Sistema Gerador de Rodizio de Organistas</description>
   <build>
     <plugins>
